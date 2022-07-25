@@ -1,9 +1,9 @@
 const axios = require('axios');
 
 module.exports = class AxiosInstance {
-  constructor() {
+  constructor(url) {
     this.axiosInstance = axios.create({
-      baseURL: 'https://api.github.com/users/takenet/repos?sort=created&direction=asc',
+      baseURL: url,
       headers: {
         Accept: 'application/json',
       },
