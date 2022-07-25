@@ -3,9 +3,10 @@ const ReposService = require('./ReposService');
 const AxiosInstance = require('../helpers/AxiosInstance');
 
 const mockApi = 'https://62decf3d976ae7460be2be6d.mockapi.io/api/v1/takebliptest/repos';
+const mockApiFail = 'https://62decf3d976ae7460be2be6d.mockapi.io/api/v1/takebliptest/';
 
-describe('Acesso ao repositório', () => {
-  describe('Em caso de sucesso na requisição', () => {
+describe('Acesso ao repositório mockAPi', () => {
+  describe('Em caso de sucesso na requisição:', () => {
     let result;
 
     beforeAll(async () => {
@@ -37,6 +38,32 @@ describe('Acesso ao repositório', () => {
 
     it('A chave \'language\' de cada objeto do Array deve conter o valor C#', () => {
       result.forEach((repo) => { expect(repo.language).toBe('C#'); });
+    });
+  });
+
+  describe('Em caso de falha na requisição:', () => {
+    let reposService;
+
+    beforeAll(() => {
+      const axiosResponse = new AxiosInstance(mockApiFail);
+      const reposModelResponse = new ReposModel(axiosResponse);
+      reposService = new ReposService(reposModelResponse);
+    });
+
+    it('Deve lançar um erro', async () => {
+      try {
+        await reposService.getRepos();
+      } catch (err) {
+        expect(err).toBeInstanceOf(Error);
+      }
+    });
+
+    it('Deve lançar a seguinte mensagem de erro: \'Não foi possível obter os repositórios\'', async () => {
+      try {
+        await reposService.getRepos();
+      } catch (err) {
+        expect(err.message).toBe('Não foi possível obter os repositórios');
+      }
     });
   });
 });
