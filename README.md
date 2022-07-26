@@ -43,6 +43,27 @@ A resposta à requisição GET na rota <code>/repos</code> consiste na apresenta
 ]
 ```
 
+# Informações e instruções sobre os testes
+
+Foram realizados os testes unitário da camada services e o teste de integração da API.
+
+Para os testes unitários foi utilizada uma API simplificada que simula a API pública do GitHub, que foi utilizada na aplicação. Este mock da API está disponível [**aqui**] (https://62decf3d976ae7460be2be6d.mockapi.io/api/v1/takebliptest/repos).
+
+Os testes unitários da camada services consistem na verificação dos seguintes tópicos:
+
+**Em caso de sucesso na requisição à API do GitHub:
+- deve retornar um array com tamanho 5;
+- cada objeto do Array deve conter a chave 'language';
+- cada objeto do Array deve conter a chave 'fullName';
+- cada objeto do Array deve conter a chave 'description';
+- cada objeto do Array deve conter a chave 'createdAt';
+- A chave 'language' de cada objeto do Array deve conter o valor <code>C#</code>.
+
+**Em caso de falha na requisição à API do GitHub:
+- deve lançar a seguinte mensagem de erro: 'Não foi possível obter os repositórios'.
+
+Na raiz do projeto, utiliza o comando <code>npm test</code> para rodas todos os arquivos de teste
+
 ### Estrutura da aplicação:
 ```shell
 .
