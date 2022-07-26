@@ -117,3 +117,14 @@ Na raiz do projeto, utilize o comando <code>npm test</code> para rodar todos os 
 
 - framework de teste unitário: **Jest**
 - **SuperTest**: biblioteca npm para testar API a partir de simulações de requisições HTTP
+
+---
+
+# Autor
+
+  Cristiano Seabra de Lima
+<br />
+  Desenvolvedor WEB FullStack em constante aprendizado e entusiasta por tecnologia e sua força transformadora no mundo!
+
+  <a href="https://www.linkedin.com/in/cristianolimacsl/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+---
