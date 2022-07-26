@@ -1,6 +1,6 @@
 
 ### Estrutura da aplicação:
-$ tree -a
+tree -a
 .
 ├── challenge
 │   ├── Api
