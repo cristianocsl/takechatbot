@@ -126,5 +126,5 @@ Na raiz do projeto, utilize o comando <code>npm test</code> para rodar todos os 
 <br />
   Desenvolvedor WEB FullStack em constante aprendizado e entusiasta por tecnologia e sua força transformadora no mundo!
 
-  <a href="https://www.linkedin.com/in/cristianolimacsl/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+  <a href="https://www.linkedin.com/in/cristianolimacsl/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> https://www.linkedin.com/in/cristianolimacsl/
 ---
