@@ -65,3 +65,17 @@ A resposta à requisição GET na rota <code>/repos</code> consiste na apresenta
 │   ├── Flow
 │   │   ├── mybotflow.json
 ```
+
+# Linguagem / ferramentas utilizadas
+
+- linguagem: **JavaScript**
+- ambiente de execução: **Node.js**
+- framework: **Express**
+
+- **Axios**: Cliente HTTP baseado em promessas para o navegador e Node.js
+- **Dotenv**: gerenciador de variáveis de ambiente
+- **HTTP Status Codes**: facilitador de acesso aos códigos de status
+- **ESLint**: organização e padronização de código
+
+- framework de teste unitário: **Jest**
+- **SuperTest**: biblioteca npm para testar API a partir de simulações de requisições HTTP
