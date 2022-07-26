@@ -47,7 +47,7 @@ A resposta à requisição GET na rota <code>/repos</code> consiste na apresenta
 
 Foram realizados os testes unitário da camada services e o teste de integração da API.
 
-Para os testes unitários foi utilizada uma API simplificada que simula a API pública do GitHub, que foi utilizada na aplicação. Este mock da API está disponível [**aqui**] (https://62decf3d976ae7460be2be6d.mockapi.io/api/v1/takebliptest/repos).
+Para os testes unitários foi utilizada uma API simplificada que simula a API pública do GitHub, que foi utilizada na aplicação. Este mock da API está disponível [**aqui**](https://62decf3d976ae7460be2be6d.mockapi.io/api/v1/takebliptest/repos).
 
 Os testes unitários da camada services consistem na verificação dos seguintes tópicos:
 
