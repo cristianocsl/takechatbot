@@ -120,11 +120,10 @@ Na raiz do projeto, utilize o comando <code>npm test</code> para rodar todos os 
 
 ---
 
-# Autor
+# Contatos
 
-  Cristiano Seabra de Lima
-<br />
-  Desenvolvedor WEB FullStack em constante aprendizado e entusiasta por tecnologia e sua força transformadora no mundo!
+E-mail: cslcristiano@gmail.com
+LinkedIn: https://www.linkedin.com/in/cristianolimacsl/
+GitHub: https://github.com/cristianocsl
 
-  <a href="https://www.linkedin.com/in/cristianolimacsl/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> https://www.linkedin.com/in/cristianolimacsl/
 ---
