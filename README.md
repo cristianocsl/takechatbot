@@ -4,9 +4,9 @@ Esta API foi desenvolvida para a etapa técnica do processo de seleção da _**T
 
 Um chatbot criado no portal da **Take Blip** utilizará esta API como fonte de informações.
 
-# Endpoint GET <code>/repos<code>
+# Endpoint GET <code>/repos</code>
 
-A resposta à requisição GET na rota <code>/repos<code> consiste na apresentação das informações, conforme os critérios de seleção das informações dos repositórios com linguagem C# da Take, ordenados de forma ascendente a partir da data de criação.
+A resposta à requisição GET na rota <code>/repos</code> consiste na apresentação das informações, conforme os critérios de seleção das informações dos repositórios com linguagem C# da Take, ordenados de forma ascendente a partir da data de criação.
 
 ### Estrutura da aplicação:
 ```shell
