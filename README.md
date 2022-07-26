@@ -49,9 +49,9 @@ Foram realizados os testes unitário da camada services e o teste de integraçã
 
 Para os testes unitários foi utilizada uma API simplificada que simula a API pública do GitHub, que foi utilizada na aplicação. Este mock da API está disponível [**aqui**](https://62decf3d976ae7460be2be6d.mockapi.io/api/v1/takebliptest/repos).
 
-Os testes unitários da camada services consistem na verificação dos seguintes tópicos:
+**Os testes unitários da camada services consistem na verificação dos seguintes tópicos:**
 
-**Em caso de sucesso na requisição à API do GitHub:
+**Em caso de sucesso na requisição à API do GitHub:**
 - deve retornar um array com tamanho 5;
 - cada objeto do Array deve conter a chave 'language';
 - cada objeto do Array deve conter a chave 'fullName';
@@ -61,6 +61,13 @@ Os testes unitários da camada services consistem na verificação dos seguintes
 
 **Em caso de falha na requisição à API do GitHub:
 - deve lançar a seguinte mensagem de erro: 'Não foi possível obter os repositórios'.
+
+**O teste de integação consiste em verificar os seguintes pontos:**
+
+- ao fazer uma requisição com sucesso, retorna um status 200;
+- ao fazer uma requisição com sucesso, retorna uma instância de array;
+- ao fazer a requisição com sucesso, retorna um array com tamanho 5.
+
 
 Na raiz do projeto, utiliza o comando <code>npm test</code> para rodas todos os arquivos de teste
 
