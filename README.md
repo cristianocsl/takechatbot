@@ -1,6 +1,7 @@
 
 ### Estrutura da aplicação:
-tree -a
+```shell
+$ tree -a
 .
 ├── challenge
 │   ├── Api
@@ -20,3 +21,4 @@ tree -a
 │   │   ├── index.js
 │   ├── Flow
 │   │   ├── mybotflow.json
+```
