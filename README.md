@@ -122,8 +122,11 @@ Na raiz do projeto, utilize o comando <code>npm test</code> para rodar todos os 
 
 # Contatos
 
+
 E-mail: cslcristiano@gmail.com
+
 LinkedIn: https://www.linkedin.com/in/cristianolimacsl/
+
 GitHub: https://github.com/cristianocsl
 
 ---
