@@ -76,6 +76,10 @@ Na raiz do projeto, utilize o comando <code>npm test</code> para rodar todos os 
 - ao fazer uma requisição com sucesso, retorna uma instância de array;
 - ao fazer a requisição com sucesso, retorna um array com tamanho 5.
 
+### **Cobertura de testes**
+
+![cobertura-testes](https://user-images.githubusercontent.com/82241160/181128187-cc01cfb2-2300-460a-bfb0-69bec48634a0.png)
+
 ------------
 
 ### Estrutura da aplicação:
