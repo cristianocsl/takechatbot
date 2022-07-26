@@ -43,13 +43,17 @@ A resposta à requisição GET na rota <code>/repos</code> consiste na apresenta
 ]
 ```
 
-# Informações e instruções sobre os testes
+# Testes
 
 Foram realizados os testes unitário da camada services e o teste de integração da API.
 
 Para os testes unitários foi utilizada uma API simplificada que simula a API pública do GitHub, que foi utilizada na aplicação. Este mock da API está disponível [**aqui**](https://62decf3d976ae7460be2be6d.mockapi.io/api/v1/takebliptest/repos).
 
-**Os testes unitários da camada services consistem na verificação dos seguintes tópicos:**
+#### Instruções para rodar os testes
+
+Na raiz do projeto, utilize o comando <code>npm test</code> para rodar todos os arquivos de teste, ou utilize <code>npm test ReposService</code> / <code>npm test Integration</code> para rodar um arquivo específico.
+
+#### **Os testes unitários da camada services consistem na verificação dos seguintes tópicos:**
 
 **Em caso de sucesso na requisição à API do GitHub:**
 - deve retornar um array com tamanho 5;
@@ -59,17 +63,14 @@ Para os testes unitários foi utilizada uma API simplificada que simula a API p�
 - cada objeto do Array deve conter a chave 'createdAt';
 - A chave 'language' de cada objeto do Array deve conter o valor <code>C#</code>.
 
-**Em caso de falha na requisição à API do GitHub:
+**Em caso de falha na requisição à API do GitHub:**
 - deve lançar a seguinte mensagem de erro: 'Não foi possível obter os repositórios'.
 
-**O teste de integação consiste em verificar os seguintes pontos:**
+#### **O teste de integação consiste em verificar os seguintes pontos:**
 
 - ao fazer uma requisição com sucesso, retorna um status 200;
 - ao fazer uma requisição com sucesso, retorna uma instância de array;
 - ao fazer a requisição com sucesso, retorna um array com tamanho 5.
-
-
-Na raiz do projeto, utiliza o comando <code>npm test</code> para rodas todos os arquivos de teste
 
 ### Estrutura da aplicação:
 ```shell
@@ -78,7 +79,6 @@ Na raiz do projeto, utiliza o comando <code>npm test</code> para rodas todos os 
 │   ├── Api
 │   │   ├── controllers
 │   │   │   ├── ReposController.js
-|   |   |   ├── ReposController.spec.js
 |   |   |   ├── ReposRouter.js
 │   │   ├── helpers
 │   │   │   ├── AxiosInstance.js
@@ -87,6 +87,8 @@ Na raiz do projeto, utiliza o comando <code>npm test</code> para rodas todos os 
 │   │   │   ├── ReposModel.js
 │   │   ├── services
 │   │   │   ├── ReposService.js
+│   │   ├── tests
+│   │   │   ├── Integration.spec.js
 │   │   │   ├── ReposService.spec.js
 │   │   ├── App.js
 │   │   ├── index.js
