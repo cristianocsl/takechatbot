@@ -59,7 +59,7 @@ Na raiz do projeto, utilize o comando <code>npm test</code> para rodar todos os 
 
 #### **Os testes unitários da camada services consistem na verificação dos seguintes tópicos:**
 
-===
+=
 
 **Em caso de sucesso na requisição à API do GitHub:**
 - deve retornar um array com tamanho 5;
