@@ -1,17 +1,18 @@
+const axios = require('axios');
+const MockAdapter = require('axios-mock-adapter');
 const ReposModel = require('../models/ReposModel');
 const ReposService = require('../services/ReposService');
 const AxiosInstance = require('../helpers/AxiosInstance');
-
-const mockApi = 'https://62decf3d976ae7460be2be6d.mockapi.io/api/v1/takebliptest/repos';
-const mockApiFail = 'https://62decf3d976ae7460be2be6d.mockapi.io/api/v1/takebliptest/';
-module.exports = mockApi;
+const mockArrayResult = require('./mockArrayResult');
 
 describe('Acesso ao repositório mockAPi', () => {
   describe('Em caso de sucesso na requisição:', () => {
     let result;
 
     beforeAll(async () => {
-      const axiosResponse = new AxiosInstance(mockApi);
+      const axiosMock = new MockAdapter(axios);
+      axiosMock.onGet().reply(200, mockArrayResult);
+      const axiosResponse = new AxiosInstance(axiosMock);
       const reposModelResponse = new ReposModel(axiosResponse);
       const reposService = new ReposService(reposModelResponse);
       result = await reposService.getRepos();
@@ -46,7 +47,9 @@ describe('Acesso ao repositório mockAPi', () => {
     let reposService;
 
     beforeAll(() => {
-      const axiosResponse = new AxiosInstance(mockApiFail);
+      const axiosMock = new MockAdapter(axios);
+      axiosMock.onGet().reply(500);
+      const axiosResponse = new AxiosInstance(axiosMock);
       const reposModelResponse = new ReposModel(axiosResponse);
       reposService = new ReposService(reposModelResponse);
     });
