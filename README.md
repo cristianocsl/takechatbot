@@ -51,7 +51,7 @@ A resposta à requisição GET na rota <code>/repos</code> consiste na apresenta
 
 Foram realizados os testes unitário da camada services e o teste de integração da API.
 
-Para os testes unitários foi utilizada uma API simplificada que simula a API pública do GitHub, que foi utilizada na aplicação. Este mock da API está disponível [**aqui**](https://62decf3d976ae7460be2be6d.mockapi.io/api/v1/takebliptest/repos).
+Para os testes unitários foi utilizada a lib <code>axios-mock-adapter</code> que é um adaptador Axios que permite simular requsições.
 
 #### Instruções para rodar os testes
 
@@ -78,7 +78,7 @@ Na raiz do projeto, utilize o comando <code>npm test</code> para rodar todos os 
 
 ### **Cobertura de testes**
 
-![cobertura-testes](https://user-images.githubusercontent.com/82241160/181128187-cc01cfb2-2300-460a-bfb0-69bec48634a0.png)
+![Captura de tela de 2022-07-26 22-41-22](https://user-images.githubusercontent.com/82241160/181142098-5773a3ed-9bb1-4c75-b93f-e76d67584267.png)
 
 ------------
 
@@ -121,6 +121,7 @@ Na raiz do projeto, utilize o comando <code>npm test</code> para rodar todos os 
 
 - framework de teste unitário: **Jest**
 - **SuperTest**: biblioteca npm para testar API a partir de simulações de requisições HTTP
+- **axios-mock-adapter**: adaptador Axios que permite simular requsições
 
 ---
 
